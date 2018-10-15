@@ -1,0 +1,17 @@
+name: s3arch
+version: "1.0"
+author: Nick Hazen <nicholasahazen@gmail.com>
+about: Grep for s3 archives
+args:
+  - bucket:
+      index: 1
+      required: true
+      help: The s3 bucket that is the target of the search.
+  - term:
+      index: 2
+      required: true
+      help: The search term.
+  - filters:
+      index: 3
+      required: false
+      help: Filters to remove files from search set.
